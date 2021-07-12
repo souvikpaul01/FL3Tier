@@ -30,5 +30,5 @@ main
 
 ## Communication
 Considering there are no enough client devices to do experiments, we use java multithreading to 
-simulate the real clients. For example, run 100 threads in one device. If you have the many real devices,
+simulate the real clients, for example, run 100 threads in one device. If you have the many real devices,
 the project also works.
