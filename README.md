@@ -18,7 +18,7 @@ main
               └─ ServerConnection.java
 ```
 The base model is a MLP composed of one input layer, one output layer and one hidden layer with 1000
-units using ReLU activation. The model can be changed by in FederatedModel.java.
+units using ReLU activation. The model can be changed in FederatedModel.java.
 
 ## Client-side
 ```
