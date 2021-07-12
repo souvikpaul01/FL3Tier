@@ -4,7 +4,7 @@ Implementation of federated learning on real-world setting.
 
 ## Overview
 We implement a real-world federated learning project based on Java. There are one server and many clients to 
-collaboratively train a model. We use DL4J as the deep learning library. The dataset is a Human 
+collaboratively train a model. We use DL4J as the deep learning library. The data we use is a Human 
 Activity Recognition (HAR) dataset.
 
 ## Server-side
