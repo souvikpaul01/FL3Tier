@@ -22,6 +22,5 @@ main
 main
 └─ java
        ├─ FileClient.java
-       ├─ GetServerModel.java
        └─ localUpdate.java
 ```
