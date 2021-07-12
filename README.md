@@ -7,9 +7,21 @@ We implement a real-world federated learning project based on Java. There are on
 collaboratively train a model. We use DL4J as the deep learning library.
 
 ## Server-side
-src
-└─ main
-       └─ java
-              ├─ FileClient.java
-              ├─ GetServerModel.java
-              └─ localUpdate.java## Client-side
+```
+main
+└─ java
+       ├─ baselinemodel.java
+       └─ server
+              ├─ FederatedModel.java
+              ├─ FileServer.java
+              └─ ServerConnection.java
+```
+
+## Client-side
+```
+main
+└─ java
+       ├─ FileClient.java
+       ├─ GetServerModel.java
+       └─ localUpdate.java
+```
