@@ -116,7 +116,8 @@ public class FederatedModel {
     public void initModel() throws IOException {
 
         System.out.println("initing model...");
-
+        // For keeping the network outputs reproducible during runs
+        // by initializing weights and other network randomizations through a seed
         int seed = 100;
         double learningRate = 0.001;
         int round = 10;

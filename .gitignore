@@ -1,2 +1,10 @@
 /client/res/dataset
+/client/build
+/client/.gradle
+/client/.idea
+
+
 /server/res/dataset
+/server/build
+/server/.gradle
+/server/.idea
