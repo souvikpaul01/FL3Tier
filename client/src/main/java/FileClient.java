@@ -1,6 +1,10 @@
+import org.nd4j.linalg.api.ndarray.INDArray;
+
 import java.io.*;
 import java.net.Socket;
 import java.nio.file.Files;
+import java.util.HashMap;
+import java.util.Map;
 
 public class FileClient {
 
@@ -186,18 +190,28 @@ public class FileClient {
         System.out.println(in.readUTF());
     }
 
-    /*
-    private void uploadParameterTable() throws IOException {
+    // update weights
+    private void uploadParameterTable(Map<String, INDArray> paramTable) throws IOException {
         System.out.println("Send UPLDPT operation to server and waiting for response...");
         out.writeUTF("UPLDPT");
-        out.write
+        if (!in.readBoolean()) {
+            System.out.println("Server reject");
+            return;
+        }
+
+        System.out.println("uploading ParamTable");
+        ObjectOutputStream mapOutputStream = new ObjectOutputStream(out);
+        mapOutputStream.writeObject(paramTable);
+        System.out.println("upload ParamTable finish!");
+
     }
 
-     */
+
 
 
     public static void main(String args[]) throws IOException, InterruptedException {
-        String DEFAULT_IP = "30.20.0.8";
+//        String DEFAULT_IP = "30.20.0.8";
+        String DEFAULT_IP = "30.20.2.90";
         int DEFAULT_PORT = 8000;
         int DEFAULT_TIMEOUT = 5000;
 
@@ -205,24 +219,44 @@ public class FileClient {
 
         FileClient c = connect(DEFAULT_IP, DEFAULT_PORT, DEFAULT_TIMEOUT);
          //download latest model from server
-        c.download("server_model.zip");
-//
-//        //local update
-//        localUpdate localModel = new localUpdate();
-//        localModel.id = c.id + "";
-//        localModel.clientUpdate();
-//
-//        //upload local model to server
+//        c.download("server_model.zip");
+        try {
+            c.download("server_model.zip");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        //local update
+        localUpdate localModel = new localUpdate();
+        localModel.id = c.id + "";
+        localModel.clientUpdate();
+
+        //upload local model to server
 //        c.upload(new File(uploadDir + c.id + ".zip"), c.id + ".zip");
-//
-//        //disconnect
-//        c.quit();
+        Map<String, INDArray> map = new HashMap<>();
+        Map<String, INDArray> paramTable = localUpdate.transferred_model.paramTable();
+        map.put("weight", paramTable.get(String.format("%d_W", 2)));
+        map.put("bias", paramTable.get(String.format("%d_b", 2)));
+
+        try {
+            c.uploadParameterTable(map);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        //disconnect
+        c.quit();
+
+
+        /*
         MultiClients multiClients = new MultiClients();
         int numOfClients = 160;
         for (int i = 0; i < numOfClients; i++) {
             Thread thread = new Thread(multiClients);
             thread.start();
         }
+
+         */
 
     }
 
@@ -252,7 +286,7 @@ class MultiClients implements Runnable {
         //local update
         localUpdate localModel = new localUpdate();
         localModel.id = c.id + "";
-        localModel.clientUpdate(1);
+        localModel.clientUpdate();
 
         //upload local model to server
         c.upload(new File(FileClient.uploadDir + c.id + ".zip"), c.id + ".zip");

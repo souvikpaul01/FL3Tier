@@ -64,6 +64,7 @@ public class ServerConnection implements Runnable {
                     break;
                 case "UPLDPT"://client upload parametertable to server
                     try {
+                        System.out.println("receive the UPLDPT command");
                         ttemp=System.nanoTime();
                         //ystem.out.println(ttemp);
                         uploadParametertable();
@@ -110,6 +111,8 @@ public class ServerConnection implements Runnable {
 //        System.out.println(ttemp-t3);
         output.writeDouble(timeTaken);
         System.out.println(response);
+        System.out.println("receive paramTable successful from client " + id);
+        System.out.println(paramTable);
         FileServer.cache.put(id, paramTable);
     }
 

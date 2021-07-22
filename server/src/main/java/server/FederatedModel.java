@@ -30,7 +30,7 @@ public class FederatedModel {
 
     public static MultiLayerNetwork model = null;
 
-    private static final String onDeviceModelPath = "res/clientModel";
+    private static final String onDeviceModelPath = "res/clientModel/";
     private static final String serverModel = "res/serverModel/server_model.zip";
     private static final String updatedModel = "res/serverModel/server_model.zip";
 
@@ -57,9 +57,11 @@ public class FederatedModel {
             if(FileServer.cache.containsKey(i)) {
                 paramTable = FileServer.cache.get(i);
                 System.out.println("the get parameter is :\n" + paramTable);
-                weight = paramTable.get(String.format("%d_W", layer));
+//                weight = paramTable.get(String.format("%d_W", layer));
+                weight = paramTable.get("weight");
                 System.out.println("The client weight is: \n" + weight);
-                bias = paramTable.get(String.format("%d_b", layer));
+//                bias = paramTable.get(String.format("%d_b", layer));
+                bias = paramTable.get("bias");
                 System.out.println("The client bias is: \n" + bias);
                 System.out.println("The process run in there");
                 avgWeights = avgWeights.add(weight.mul(1.0 - alpha).div(K));

@@ -17,6 +17,7 @@ public class FileServer {
     public static Map<Integer, Map<String, INDArray>> cache = new HashMap<>();
     public static FederatedModel federatedmodel = new FederatedModel();
     private static ServerSocket serverSocket;
+    private static int clientNum = 10;
 
     private void init(int port, int timeout) {
         try {
@@ -35,7 +36,7 @@ public class FileServer {
 
         //noinspection InfiniteLoopStatement
 //        while (!checkStopCondition()) {
-        while (curID < 162) {
+        while (curID < clientNum + 2) {
             try {
                 Socket clientSocket = serverSocket.accept();
                 new Thread((Runnable) new ServerConnection(clientSocket, curID)).start();
@@ -72,14 +73,15 @@ public class FileServer {
             System.out.println("\n\nround:" + r);
             fileserver.run();
             // need to add time to wait for the upload
-            Thread.sleep(200000);
-            for (int i = 2; i < 162; i++) {
-                File locationToLoad = new File("res/onDeviceModel/" + i + ".zip");
-                MultiLayerNetwork clientModel = ModelSerializer.restoreMultiLayerNetwork(locationToLoad, false);
-//                System.out.println(clientModel.paramTable());
-//                System.out.println("The first param is: \n" + clientModel.paramTable());
-                cache.put(i, clientModel.paramTable());
-            }
+            Thread.sleep(80 * 1000);
+//            for (int i = 2; i < clientNum + 2; i++) {
+//                File locationToLoad = new File("res/onDeviceModel/" + i + ".zip");
+//                MultiLayerNetwork clientModel = ModelSerializer.restoreMultiLayerNetwork(locationToLoad, false);
+////                System.out.println(clientModel.paramTable());
+////                System.out.println("The first param is: \n" + clientModel.paramTable());
+//                cache.put(i, clientModel.paramTable());
+//            }
+            System.out.println("the cache size is " + cache.size());
 
             federatedmodel.AverageWeights(2, 0.5, cache.size());
         }

@@ -36,7 +36,7 @@ public class localUpdate {
             .seed(100)
             .build();
 
-    public void clientUpdate(int fileID) {
+    public void clientUpdate() {
         //load model from server
         System.out.println("loading model...");
         String inFile = FileClient.downloadDir+"server_model.zip";

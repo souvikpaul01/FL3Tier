@@ -8,3 +8,4 @@
 /server/build
 /server/.gradle
 /server/.idea
+/server/res/onDeviceModel
