@@ -32,3 +32,6 @@ main
 Considering there are no enough client devices to do experiments, we use java multithreading to 
 simulate the real clients, for example, run 100 threads in one device. If you have the many real devices,
 the project also works.
+
+## Reference
+https://github.com/Cautiousss/federated-learning
