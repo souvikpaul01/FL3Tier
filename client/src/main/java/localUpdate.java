@@ -66,7 +66,7 @@ public class localUpdate {
 
         DataSetIterator trainIter = new RecordReaderDataSetIterator(rr, batchSize, 0, 10);
         System.out.println("load data finish!");
-        transferred_model.setListeners(new ScoreIterationListener(50));  //Print score every 10 parameter updates
+//        transferred_model.setListeners(new ScoreIterationListener(50));  //Print score every 10 parameter updates
 
         transferred_model.fit(trainIter, nEpochs);
         System.out.println("training finished");
@@ -81,11 +81,6 @@ public class localUpdate {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    public void hello() {
-        System.out.println("hello from localUpdate!");
-        System.out.println(id);
     }
 
 }

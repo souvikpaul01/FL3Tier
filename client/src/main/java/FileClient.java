@@ -16,8 +16,8 @@ public class FileClient {
     private DataInputStream in;
     private DataOutputStream out;
 
-    public static String uploadDir="res/clientModel/";
-    public static String downloadDir="res/serverModel/";
+    public static String uploadDir = "res/clientModel/";
+    public static String downloadDir = "res/serverModel/";
 
     private FileClient(Socket socket, int id, DataInputStream input, DataOutputStream output) {
         this.socket = socket;
@@ -191,34 +191,46 @@ public class FileClient {
     }
 
     // update weights
-    private void uploadParameterTable(Map<String, INDArray> paramTable) throws IOException {
-        System.out.println("Send UPLDPT operation to server and waiting for response...");
-        out.writeUTF("UPLDPT");
+    public void uploadParamTable(Map<String, INDArray> paramTable) throws IOException {
+        System.out.println("Sending UPLDPT operation to server and waiting for response...");
+        out.writeUTF("UPLDPT");//t0
+
+        // Get server confirmation
         if (!in.readBoolean()) {
-            System.out.println("Server reject");
+            System.out.println("Server rejected request:uploadParamTable");
             return;
         }
 
-        System.out.println("uploading ParamTable");
+        // Start timer
+//        long t2 = System.currentTimeMillis();
+        long t2 = System.nanoTime();
+
+        // Convert Map to byte array
+        System.out.println("uploading ParamTable...");
         ObjectOutputStream mapOutputStream = new ObjectOutputStream(out);
         mapOutputStream.writeObject(paramTable);
-        System.out.println("upload ParamTable finish!");
 
+        double t4_t3 = in.readDouble();
+//        long t5 = System.currentTimeMillis();
+        long t5 = System.nanoTime();
+        double timeTaken = (t5 - t2) / 1000 - t4_t3;
+        System.out.println("t5-t2: " + (t5 - t2) / 1000);
+        System.out.println("t4-t3: " + (t4_t3));
+        System.out.println("time taken: " + timeTaken / 1000);
+        System.out.println("upload ParamTable finish!");
     }
 
 
-
-
-    public static void main(String args[]) throws IOException, InterruptedException {
-//        String DEFAULT_IP = "30.20.0.8";
-        String DEFAULT_IP = "30.20.2.90";
+    public static void main(String[] args) throws IOException, InterruptedException {
+        String DEFAULT_IP = "30.20.0.8";
+//        String DEFAULT_IP = "30.20.2.90";
         int DEFAULT_PORT = 8000;
         int DEFAULT_TIMEOUT = 5000;
 
         // This client is just used for download the model from server
 
         FileClient c = connect(DEFAULT_IP, DEFAULT_PORT, DEFAULT_TIMEOUT);
-         //download latest model from server
+        //download latest model from server
 //        c.download("server_model.zip");
         try {
             c.download("server_model.zip");
@@ -226,37 +238,15 @@ public class FileClient {
             e.printStackTrace();
         }
 
-        //local update
-        localUpdate localModel = new localUpdate();
-        localModel.id = c.id + "";
-        localModel.clientUpdate();
-
-        //upload local model to server
-//        c.upload(new File(uploadDir + c.id + ".zip"), c.id + ".zip");
-        Map<String, INDArray> map = new HashMap<>();
-        Map<String, INDArray> paramTable = localUpdate.transferred_model.paramTable();
-        map.put("weight", paramTable.get(String.format("%d_W", 2)));
-        map.put("bias", paramTable.get(String.format("%d_b", 2)));
-
-        try {
-            c.uploadParameterTable(map);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         //disconnect
-        c.quit();
+//        c.quit();
 
-
-        /*
         MultiClients multiClients = new MultiClients();
-        int numOfClients = 160;
+        int numOfClients = 10;
         for (int i = 0; i < numOfClients; i++) {
             Thread thread = new Thread(multiClients);
             thread.start();
         }
-
-         */
 
     }
 
@@ -267,29 +257,33 @@ class MultiClients implements Runnable {
     @Override
     public void run() {
         String DEFAULT_IP = "30.20.0.8";
-//        String DEFAULT_IP = "192.168.0.101";
-        int DEFAULT_PORT = 8000;
 
+        int DEFAULT_PORT = 8000;
         int DEFAULT_TIMEOUT = 5000;
 
+        int layer = 2;
+
         FileClient c = FileClient.connect(DEFAULT_IP, DEFAULT_PORT, DEFAULT_TIMEOUT);
-        //download latest model from server
-        // Attention!!!
-        // need to download the server_model only once before the multi-thread run,
-        // as reading the .zip file may have conflict when reading and writing run at the same time.
-//        try {
-//            c.download("server_model.zip");
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
 
         //local update
         localUpdate localModel = new localUpdate();
         localModel.id = c.id + "";
         localModel.clientUpdate();
 
+        Map<String, INDArray> map = new HashMap<>();
+        Map<String, INDArray> paramTable = localUpdate.transferred_model.paramTable();
+        map.put("weight", paramTable.get(String.format("%d_W", layer)));
+        map.put("bias", paramTable.get(String.format("%d_b", layer)));
+
+        //upload weights to server
+        try {
+            c.uploadParamTable(map);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         //upload local model to server
-        c.upload(new File(FileClient.uploadDir + c.id + ".zip"), c.id + ".zip");
+//        c.upload(new File(FileClient.uploadDir + c.id + ".zip"), c.id + ".zip");
         //disconnect
         c.quit();
     }
