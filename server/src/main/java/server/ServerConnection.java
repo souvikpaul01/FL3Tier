@@ -59,9 +59,9 @@ public class ServerConnection implements Runnable {
             }
 
             switch (operation) {
-                case "UPLD"://client upload file to server
-                    upload();
-                    break;
+//                case "UPLD"://client upload file to server
+//                    upload();
+//                    break;
                 case "UPLDPT"://client upload parametertable to server
                     try {
                         System.out.println("receive the UPLDPT command");
@@ -150,7 +150,6 @@ public class ServerConnection implements Runnable {
 
         // Write file out
         File outFile = new File(fullPath);
-        //noinspection ResultOfMethodCallIgnored
         try (FileOutputStream stream = new FileOutputStream(outFile)) {
             stream.write(bytes);
         } catch (IOException e) {
