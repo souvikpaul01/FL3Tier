@@ -184,7 +184,7 @@ public class ServerConnection implements Runnable {
         System.out.println("Client is requesting to download a file");
 
         String filename = getFilename(false);
-        String fullPath = "res/model/"+filename;
+        String fullPath = "res/serverModel/"+filename;
 
         // Check if file exists
         File file = new File(fullPath);
