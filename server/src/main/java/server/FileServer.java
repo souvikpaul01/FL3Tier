@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class FileServer {
 
-    public static String onDeviceModelPath = "res/onDeviceModel";
+    public static String onDeviceModelPath = "res/clientModel";
     public static Map<Integer, Map<String, INDArray>> cache = new HashMap<>();
     public static FederatedModel federatedmodel = new FederatedModel();
     private static ServerSocket serverSocket;
