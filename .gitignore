@@ -11,3 +11,5 @@
 /server/.gradle
 /server/.idea
 /server/res/onDeviceModel
+/server/res/clientModel
+/server/res/serverModel
