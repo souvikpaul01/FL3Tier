@@ -22,7 +22,6 @@ public class localUpdate {
     String id = null;
 
 
-
     private static final int nEpochs = 5;
     private static final int batchSize = 10;
 
@@ -39,7 +38,7 @@ public class localUpdate {
     public void clientUpdate() {
         //load model from server
         System.out.println("loading model...");
-        String inFile = FileClient.downloadDir+"server_model.zip";
+        String inFile = FileClient.downloadDir + "server_model.zip";
         try {
             model = ModelSerializer.restoreMultiLayerNetwork(inFile); //this method load a multilayernetwork model from a file
             System.out.println("load model finish!");
@@ -75,12 +74,17 @@ public class localUpdate {
         Map<String, INDArray> paramTable = transferred_model.paramTable();
 
         //write model
-        String outFile = FileClient.uploadDir + id+".zip";
+        String outFile = FileClient.uploadDir + id + ".zip";
         try {
             ModelSerializer.writeModel(transferred_model, outFile, true);
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void hello() {
+        System.out.println("hello from localUpdate!");
+        System.out.println(id);
     }
 
 }
