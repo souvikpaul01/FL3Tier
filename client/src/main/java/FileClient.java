@@ -230,18 +230,8 @@ public class FileClient {
 
         FileClient c = connect(DEFAULT_IP, DEFAULT_PORT, DEFAULT_TIMEOUT);
         //download latest model from server
-        c.download("server_model.zip");
-//
-//        //local update
-//        localUpdate localModel = new localUpdate();
-//        localModel.id = c.id + "";
-//        localModel.clientUpdate();
-//
-//        //upload local model to server
-//        c.upload(new File(uploadDir + c.id + ".zip"), c.id + ".zip");
-//
-//        //disconnect
-//        c.quit();
+//        c.download("server_model.zip");
+
         MultiClients multiClients = new MultiClients();
         int numOfClients = 1;
         for (int i = 0; i < numOfClients; i++) {

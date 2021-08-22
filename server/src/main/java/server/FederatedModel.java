@@ -29,10 +29,7 @@ public class FederatedModel {
     public static int batchSize = 50;
 
     public static MultiLayerNetwork model = null;
-
-    private static final String onDeviceModelPath = "res/clientModel/";
     private static final String serverModel = "res/serverModel/server_model.zip";
-    private static final String updatedModel = "res/serverModel/server_model.zip";
 
 
     // average weights over mobile devices' models
@@ -118,8 +115,6 @@ public class FederatedModel {
     public void initModel() throws IOException {
 
         System.out.println("initing model...");
-        // For keeping the network outputs reproducible during runs
-        // by initializing weights and other network randomizations through a seed
         int seed = 100;
         double learningRate = 0.001;
         int round = 10;
@@ -149,23 +144,6 @@ public class FederatedModel {
         ModelSerializer.writeModel(model, serverModel, true);
         System.out.println("Write model to " + serverModel + " finish\n");
 
-    }
-
-    public static void main(String[] args) throws Exception {
-
-//        initModel();
-//
-//        writeModel();
-
-//        for (int t = 0; t < round; t++) {
-//            System.out.println("\n Global Training Round:" + t + "\n");
-//            System.out.println("selecting clients...");
-//            selectClients(199);
-//            System.out.println("AverageWeights...");
-//            AverageWeights(2, 0.5);
-//            evaluateModel();
-//        }
-        System.out.println("Done!");
     }
 
 }

@@ -8,7 +8,6 @@ class MultiClients implements Runnable {
 
     @Override
     public void run() {
-//        String DEFAULT_IP = "30.20.0.8";
         String DEFAULT_IP = "192.168.0.106";
         int DEFAULT_PORT = 8000;
 
@@ -16,6 +15,11 @@ class MultiClients implements Runnable {
         int layer = 2;
 
         FileClient c = FileClient.connect(DEFAULT_IP, DEFAULT_PORT, DEFAULT_TIMEOUT);
+        try {
+            c.download("server_model.zip");
+        }catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
 
         //local update
         localUpdate localModel = new localUpdate();
@@ -31,10 +35,6 @@ class MultiClients implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        //upload local model to server
-//        c.upload(new File(FileClient.uploadDir + c.id + ".zip"), c.id + ".zip");
-        //disconnect
         c.quit();
     }
 }
