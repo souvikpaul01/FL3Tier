@@ -4,6 +4,7 @@
 /client/.idea
 /client/res/serverModel
 /client/res/clientModel
+/client/res
 
 
 /server/res/dataset
