@@ -227,12 +227,6 @@ public class FileClient {
         int DEFAULT_TIMEOUT = 5000;
         int layer = 2;
 
-        // This client is just used for download the model from server
-
-//        FileClient c = connect(DEFAULT_IP, DEFAULT_PORT, DEFAULT_TIMEOUT);
-        //download latest model from server
-//        c.download("server_model.zip");
-
         FileClient c = FileClient.connect(DEFAULT_IP, DEFAULT_PORT, DEFAULT_TIMEOUT);
         try {
             c.download("server_model.zip");
