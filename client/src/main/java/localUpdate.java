@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class localUpdate {
 
-    String filenameTrain = "res/dataset/train";
+    String filenameTrain = "res/UCI-HAR/train";
     String id = null;
 
 
@@ -63,7 +63,7 @@ public class localUpdate {
         }
 
 
-        DataSetIterator trainIter = new RecordReaderDataSetIterator(rr, batchSize, 0, 10);
+        DataSetIterator trainIter = new RecordReaderDataSetIterator(rr, batchSize, 561, 6);
         System.out.println("load data finish!");
 //        transferred_model.setListeners(new ScoreIterationListener(50));  //Print score every 10 parameter updates
 

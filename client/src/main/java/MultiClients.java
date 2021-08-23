@@ -8,7 +8,7 @@ class MultiClients implements Runnable {
 
     @Override
     public void run() {
-        String DEFAULT_IP = "192.168.0.106";
+        String DEFAULT_IP = "30.20.1.2";
         int DEFAULT_PORT = 8000;
 
         int DEFAULT_TIMEOUT = 5000;
