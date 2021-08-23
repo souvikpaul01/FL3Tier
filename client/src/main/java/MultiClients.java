@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+// this class is for simulation in one machine without too many real clients
 class MultiClients implements Runnable {
 
     @Override
