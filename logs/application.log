@@ -1,0 +1,600 @@
+2021-07-31 17:25:35,373 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-07-31 17:25:46,782 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-07-31 17:25:46,785 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-07-31 17:25:46,803 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-07-31 17:25:46,813 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-07-31 17:25:46,813 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-07-31 17:25:46,813 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-07-31 17:25:46,821 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-07-31 17:25:48,585 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-07-31 17:25:49,176 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-07-31 17:25:49,326 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
+2021-08-01 09:05:58,504 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-08-01 09:06:01,232 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-08-01 09:06:01,236 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-08-01 09:06:01,257 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-08-01 09:06:01,275 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-08-01 09:06:01,275 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-08-01 09:06:01,276 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-08-01 09:06:01,289 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-08-01 09:06:03,162 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-08-01 09:06:03,914 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-08-01 09:06:04,071 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
+2021-08-01 09:07:06,016 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-08-01 09:07:07,356 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-08-01 09:07:07,359 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-08-01 09:07:07,376 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-08-01 09:07:07,386 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-08-01 09:07:07,386 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-08-01 09:07:07,386 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-08-01 09:07:07,394 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-08-01 09:07:09,166 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-08-01 09:07:09,748 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-08-01 09:07:09,920 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
+2021-08-05 15:23:42,814 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-08-05 15:23:54,654 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-08-05 15:23:54,657 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-08-05 15:23:54,675 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-08-05 15:23:54,684 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-08-05 15:23:54,685 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-08-05 15:23:54,685 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-08-05 15:23:54,692 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-08-05 15:23:56,491 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-08-05 15:23:57,079 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-08-05 15:23:57,234 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
+2021-08-06 12:05:26,384 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-08-06 12:05:29,078 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-08-06 12:05:29,086 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-08-06 12:05:29,107 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-08-06 12:05:29,126 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-08-06 12:05:29,126 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-08-06 12:05:29,126 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-08-06 12:05:29,141 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-08-06 12:05:31,013 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-08-06 12:05:31,779 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-08-06 12:05:31,936 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
+2021-08-06 12:06:34,426 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-08-06 12:06:35,762 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-08-06 12:06:35,765 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-08-06 12:06:35,783 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-08-06 12:06:35,792 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-08-06 12:06:35,793 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-08-06 12:06:35,793 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-08-06 12:06:35,801 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-08-06 12:06:37,566 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-08-06 12:06:38,159 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-08-06 12:06:38,298 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
+2021-08-06 12:08:12,911 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-08-06 12:08:14,244 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-08-06 12:08:14,247 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-08-06 12:08:14,264 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-08-06 12:08:14,274 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-08-06 12:08:14,274 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-08-06 12:08:14,275 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-08-06 12:08:14,282 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-08-06 12:08:16,060 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-08-06 12:08:16,659 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-08-06 12:08:16,819 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
+2021-08-06 12:09:44,059 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-08-06 12:09:45,402 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-08-06 12:09:45,410 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-08-06 12:09:45,428 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-08-06 12:09:45,438 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-08-06 12:09:45,439 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-08-06 12:09:45,439 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-08-06 12:09:45,447 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-08-06 12:09:47,208 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-08-06 12:09:47,824 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-08-06 12:09:47,989 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
+2021-08-11 14:27:07,916 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-08-11 14:27:19,821 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-08-11 14:27:19,824 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-08-11 14:27:19,844 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-08-11 14:27:19,853 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-08-11 14:27:19,854 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-08-11 14:27:19,854 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-08-11 14:27:19,862 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-08-11 14:27:21,480 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-08-11 14:27:22,070 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-08-11 14:27:22,211 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
+2021-08-11 14:44:00,477 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-08-11 14:44:01,901 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-08-11 14:44:01,904 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-08-11 14:44:01,921 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-08-11 14:44:01,930 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-08-11 14:44:01,931 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-08-11 14:44:01,931 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-08-11 14:44:01,938 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-08-11 14:44:03,541 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-08-11 14:44:04,155 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-08-11 14:44:04,301 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
+2021-08-11 14:50:06,092 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-08-11 14:50:07,427 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-08-11 14:50:07,430 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-08-11 14:50:07,447 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-08-11 14:50:07,457 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-08-11 14:50:07,457 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-08-11 14:50:07,458 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-08-11 14:50:07,465 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-08-11 14:50:09,076 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-08-11 14:50:09,655 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-08-11 14:50:09,829 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
+2021-08-11 14:52:07,383 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in Thread-0
+                
+Loaded [CpuBackend] backend
+
+2021-08-11 14:52:08,698 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in Thread-0
+                
+Number of threads used for linear algebra: 4
+
+2021-08-11 14:52:08,701 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory in Thread-0
+                
+Binary level Generic x86 optimization level Generic x86
+
+2021-08-11 14:52:08,718 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in Thread-0
+                
+Number of threads used for OpenMP BLAS: 4
+
+2021-08-11 14:52:08,727 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Backend used: [CPU]; OS: [Linux]
+
+2021-08-11 14:52:08,728 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Cores: [4]; Memory: [0.2GB];
+
+2021-08-11 14:52:08,728 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in Thread-0
+                
+Blas vendor: [OPENBLAS]
+
+2021-08-11 14:52:08,736 - [INFO] - from org.nd4j.linalg.cpu.nativecpu.CpuBackend in Thread-0
+                
+Backend build information:
+ GCC: "8.3.0"
+STD version: 201103L
+DEFAULT_ENGINE: samediff::ENGINE_CPU
+HAVE_FLATBUFFERS
+HAVE_OPENBLAS
+HAVE_ARMCOMPUTE
+
+2021-08-11 14:52:10,331 - [INFO] - from org.deeplearning4j.nn.multilayer.MultiLayerNetwork in Thread-0
+                
+Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+
+2021-08-11 14:52:10,931 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Frozen layer instance found! Frozen layers are treated as always in test mode. Warning will only be issued once per instance
+
+2021-08-11 14:52:11,080 - [INFO] - from org.deeplearning4j.nn.layers.FrozenLayer in Thread-0
+                
+Gradients for the frozen layer are not set and will therefore will not be updated.Warning will be issued only once per instance
+
