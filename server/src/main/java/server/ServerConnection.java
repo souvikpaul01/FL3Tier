@@ -41,9 +41,15 @@ public class ServerConnection implements Runnable {
             System.out.println("Input/Output error occurred: " + e.getMessage());
             System.out.println("Closing client connection forcefully");
 
-            try { output.close(); } catch (IOException f) { /* Do nothing */ }
-            try { input.close(); } catch (IOException f) { /* Do nothing */ }
-            try { socket.close(); } catch (IOException f) { /* Do nothing */ }
+            try {
+                output.close();
+            } catch (IOException f) { /* Do nothing */ }
+            try {
+                input.close();
+            } catch (IOException f) { /* Do nothing */ }
+            try {
+                socket.close();
+            } catch (IOException f) { /* Do nothing */ }
         }
     }
 
@@ -65,7 +71,7 @@ public class ServerConnection implements Runnable {
                 case "UPLDPT"://client upload parametertable to server
                     try {
                         System.out.println("receive the UPLDPT command");
-                        ttemp=System.nanoTime();
+                        ttemp = System.nanoTime();
                         //ystem.out.println(ttemp);
                         uploadParametertable();
                     } catch (ClassNotFoundException e) {
@@ -93,7 +99,7 @@ public class ServerConnection implements Runnable {
         output.writeBoolean(true);
 
 //        long t3 = System.currentTimeMillis();
-        long t3=System.nanoTime();
+        long t3 = System.nanoTime();
 
         ObjectInputStream mapInputStream = new ObjectInputStream(input);
         Map<String, INDArray> paramTable = (Map) mapInputStream.readObject();
@@ -101,11 +107,11 @@ public class ServerConnection implements Runnable {
         long t4 = System.nanoTime();
 
         double t1t3 = (t3 - ttemp);
-        t1t3/=1000;
+        t1t3 /= 1000;
         System.out.println("t3-t1=" + t1t3);
 
         double timeTaken = (t4 - t3);
-        timeTaken/=1000;
+        timeTaken /= 1000;
 
         String response = String.format("bytes transferred in %,.3f us", timeTaken);
 //        System.out.println(ttemp-t3);
@@ -173,7 +179,7 @@ public class ServerConnection implements Runnable {
 
         System.out.println("Client is requesting to download Server Model");
 
-        ModelSerializer.writeModel(model,output,false);
+        ModelSerializer.writeModel(model, output, false);
 
         System.out.println("downloadServerModel finish!");
 
@@ -184,7 +190,7 @@ public class ServerConnection implements Runnable {
         System.out.println("Client is requesting to download a file");
 
         String filename = getFilename(false);
-        String fullPath = "res/serverModel/"+filename;
+        String fullPath = "res/serverModel/" + filename;
 
         // Check if file exists
         File file = new File(fullPath);
@@ -212,7 +218,6 @@ public class ServerConnection implements Runnable {
         output.write(bytes);
         System.out.println("Bytes sent");
     }
-
 
 
     private String getFilename(boolean sendErrorBack) throws IOException, ClientError {

@@ -221,7 +221,7 @@ public class FileClient {
 
 
     public static void main(String args[]) throws IOException, InterruptedException {
-        String DEFAULT_IP = "30.20.1.2";
+        String DEFAULT_IP = "localhost";
 //        String DEFAULT_IP = "192.168.0.106";
         int DEFAULT_PORT = 8000;
         int DEFAULT_TIMEOUT = 5000;

@@ -17,7 +17,7 @@ public class FileServer {
     public static Map<Integer, Map<String, INDArray>> cache = new HashMap<>();
     public static FederatedModel federatedmodel = new FederatedModel();
     private static ServerSocket serverSocket;
-    private static int clientNum = 1;
+    private static int clientNum = 3;
 
     private void init(int port, int timeout) {
         try {

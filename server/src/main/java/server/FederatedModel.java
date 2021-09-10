@@ -1,4 +1,5 @@
 package server;
+
 import org.datavec.api.records.reader.RecordReader;
 import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
 import org.datavec.api.split.FileSplit;
@@ -24,8 +25,8 @@ import java.util.*;
 
 public class FederatedModel {
 
-    public static int numInputs = 45;
-    public static int numOutputs = 10;
+    public static int numInputs = 561;
+    public static int numOutputs = 6;
     public static int batchSize = 50;
 
     public static MultiLayerNetwork model = null;
@@ -50,8 +51,11 @@ public class FederatedModel {
         System.out.println("\nAveraging weights...");
 
         MultiLayerNetwork transferred_model = null;
-        for (int i = 0; i < K; i++) {
-            if(FileServer.cache.containsKey(i)) {
+        for (int i = 1; i < K + 1; i++) {
+            System.out.println("enter K loop");
+            System.out.println(FileServer.cache);
+            if (FileServer.cache.containsKey(i)) {
+                System.out.println("enter cache");
                 paramTable = FileServer.cache.get(i);
                 System.out.println("the get parameter is :\n" + paramTable);
 //                weight = paramTable.get(String.format("%d_W", layer));
@@ -88,7 +92,8 @@ public class FederatedModel {
 
     public static void evaluateModel() {
 
-        final String filenameTest = "res/dataset/test.csv";
+//        final String filenameTest = "res/dataset/test.csv";
+        String filenameTest = "res/UCI-HAR/test_final.csv";
         //Load the test/evaluation data:
         RecordReader rrTest = new CSVRecordReader();
         try {
@@ -96,7 +101,7 @@ public class FederatedModel {
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-        DataSetIterator testIter = new RecordReaderDataSetIterator(rrTest, batchSize, 0, 10);
+        DataSetIterator testIter = new RecordReaderDataSetIterator(rrTest, batchSize, 561, 6);
         System.out.println("\nEvaluate model....");
         Evaluation eval = new Evaluation(numOutputs);
         while (testIter.hasNext()) {
