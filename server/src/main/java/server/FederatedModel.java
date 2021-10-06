@@ -45,7 +45,7 @@ public class FederatedModel {
     private static final int CHANNELS = 1;
     private static final int N_OUTCOMES = 6 ;
     int nSamples = 204;
-    String filenameTrain = "C:\\Users\\souvik\\Downloads\\dev\\FL3Tier\\server\\res\\trashnet\\";
+    String filenameTrain = "/home/ubuntu/FL3Tier/server/res/trashnet";
 
     public static MultiLayerNetwork model = null;
     private static final String serverModel = "res/serverModel/server_model.zip";
