@@ -28,7 +28,7 @@ import java.util.Random;
 public class localUpdate {
 
 
-    String filenameTrain = "C:\\Users\\souvik\\Downloads\\dev\\FL3Tier\\client0\\res\\trashnet\\";
+    String filenameTrain = "home\\pi\\FL3Tier\\client\\res\\trashnet\\";
     String id = null;
 
     private static Logger log = LoggerFactory.getLogger(localUpdate.class);
