@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.typesafe.play:twirl-api_2.10:1.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.play/twirl-api_2.10/1.1.1/b11c77752bfbb3d454a54a3675a5f9ecbe564dba/twirl-api_2.10-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.play/twirl-api_2.10/1.1.1/4b8ba754f37d27410d8239658405c8e60bc48090/twirl-api_2.10-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

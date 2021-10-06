@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars:jquery-knob:1.2.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/jquery-knob/1.2.2/7aab7d7a054ab0314170f188480677b7624ed837/jquery-knob-1.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/jquery-knob/1.2.2/33db6aac14373c59f23ad3d329c244dc80befcaa/jquery-knob-1.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

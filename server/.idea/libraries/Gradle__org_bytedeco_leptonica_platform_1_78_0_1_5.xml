@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bytedeco:leptonica-platform:1.78.0-1.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/leptonica-platform/1.78.0-1.5/befb66c48d37b62ca4c2165a35cd28132230100f/leptonica-platform-1.78.0-1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/leptonica-platform/1.78.0-1.5/af9cf473ed909c1aa47bb13c98f46f209f575c11/leptonica-platform-1.78.0-1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

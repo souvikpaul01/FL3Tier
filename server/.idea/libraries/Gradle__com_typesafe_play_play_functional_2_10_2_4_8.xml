@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.typesafe.play:play-functional_2.10:2.4.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-functional_2.10/2.4.8/a8847e46a065fe5fca59be70daac03f87bf64ecf/play-functional_2.10-2.4.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-functional_2.10/2.4.8/57baeaa1a02c304cefe4996d139709cdfe327f7c/play-functional_2.10-2.4.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

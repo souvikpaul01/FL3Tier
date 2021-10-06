@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bytedeco:hdf5:1.10.5-1.5:windows-x86">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/hdf5/1.10.5-1.5/6c106ad1030137343fe42e11f5ad7edbf3e91889/hdf5-1.10.5-1.5-windows-x86.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/hdf5/1.10.5-1.5/75130ab1415a68c3a879f86127d30392646204f4/hdf5-1.10.5-1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

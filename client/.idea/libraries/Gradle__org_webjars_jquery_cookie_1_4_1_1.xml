@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars:jquery-cookie:1.4.1-1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/jquery-cookie/1.4.1-1/fa13f0ad258ab8e13c560a193046f1ad585f5e25/jquery-cookie-1.4.1-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/jquery-cookie/1.4.1-1/45d19565bf91a69180de66551146056c6a30e3b6/jquery-cookie-1.4.1-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

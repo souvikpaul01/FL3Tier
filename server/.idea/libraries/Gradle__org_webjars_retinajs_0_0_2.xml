@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars:retinajs:0.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/retinajs/0.0.2/4a876c7afbc49189a9cd85f4834c39b8f0c47cfd/retinajs-0.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/retinajs/0.0.2/84448dd64a273fdbb24e19ee7fad7ddc27ce6931/retinajs-0.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

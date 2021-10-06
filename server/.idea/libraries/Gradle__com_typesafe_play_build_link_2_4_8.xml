@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.typesafe.play:build-link:2.4.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.play/build-link/2.4.8/c5954f2ec0e0824124139e3d9c26f299d84f8460/build-link-2.4.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.play/build-link/2.4.8/c0688c4c75bac2b5e9aac16c4632a6532f674e64/build-link-2.4.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars:fullcalendar:1.6.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/fullcalendar/1.6.4/a082b90d57643600f76f0d9899e93f9e99d6000c/fullcalendar-1.6.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/fullcalendar/1.6.4/9681d5e4160cb049cc86af5a93865725fb7df6fa/fullcalendar-1.6.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

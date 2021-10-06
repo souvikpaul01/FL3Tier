@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars.npm:webcola:3.3.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/webcola/3.3.8/a950b83569534d013e9c560b4a464cbc5869ab57/webcola-3.3.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/webcola/3.3.8/b04f3ee8f5e43fa3b162981b50bb72fe1acabb33/webcola-3.3.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.scala-lang:scala-reflect:2.10.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.10.7/217f42c1d59ff051b50ad756b47c05322fdbfa74/scala-reflect-2.10.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.10.7/143c5345c0bde0520a5fb51301546f8d4d46670d/scala-reflect-2.10.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

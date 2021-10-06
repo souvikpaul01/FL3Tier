@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.eclipse.collections:eclipse-collections-forkjoin:7.1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.collections/eclipse-collections-forkjoin/7.1.2/875c64c3e482ca64ef9afe1af7867f9b2ed61b6e/eclipse-collections-forkjoin-7.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.collections/eclipse-collections-forkjoin/7.1.2/ecf5b6b9cf1070010d78930c9bc53dc2db2b387a/eclipse-collections-forkjoin-7.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars.npm:lodash.debounce:4.0.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/lodash.debounce/4.0.8/69deb384539588a1aca56939eb8f070024864e1f/lodash.debounce-4.0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/lodash.debounce/4.0.8/b04f3ee8f5e43fa3b162981b50bb72fe1acabb33/lodash.debounce-4.0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

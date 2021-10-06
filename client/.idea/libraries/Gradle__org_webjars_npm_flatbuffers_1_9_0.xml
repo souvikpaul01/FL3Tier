@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars.npm:flatbuffers:1.9.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/flatbuffers/1.9.0/bd2b01032f1d2ee7d16c0156358376e429f5df94/flatbuffers-1.9.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/flatbuffers/1.9.0/b04f3ee8f5e43fa3b162981b50bb72fe1acabb33/flatbuffers-1.9.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

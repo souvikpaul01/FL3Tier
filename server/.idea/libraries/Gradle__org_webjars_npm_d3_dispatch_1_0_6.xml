@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars.npm:d3-dispatch:1.0.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/d3-dispatch/1.0.6/9fbafc9538b1cce8d1588b1d5c6078e5e0784d21/d3-dispatch-1.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/d3-dispatch/1.0.6/b04f3ee8f5e43fa3b162981b50bb72fe1acabb33/d3-dispatch-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

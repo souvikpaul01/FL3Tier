@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars.bower:cytoscape:3.2.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.bower/cytoscape/3.2.5/c0611cde348fa92c4a3265757fadc6ba7cf85343/cytoscape-3.2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.bower/cytoscape/3.2.5/b04f3ee8f5e43fa3b162981b50bb72fe1acabb33/cytoscape-3.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

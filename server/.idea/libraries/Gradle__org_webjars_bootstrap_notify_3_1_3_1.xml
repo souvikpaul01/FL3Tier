@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars:bootstrap-notify:3.1.3-1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/bootstrap-notify/3.1.3-1/4be3c6d072ec11227bb2ba00634cf345a5d341c0/bootstrap-notify-3.1.3-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/bootstrap-notify/3.1.3-1/86a9775579523977a83389d3b52dca7b88e07477/bootstrap-notify-3.1.3-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

@@ -33,28 +33,34 @@ public class baselinemodel {
 
         int seed = 100;
         double learningRate = 0.001;
-//        int batchSize = 50;
-//        int nEpochs = 20;
-        int batchSize = 10;
-        int nEpochs = 1;
+        int batchSize = 50;
+        int nEpochs = 5;
+//        int batchSize = 10;
+//        int nEpochs = 1;
 
-        int numInputs = 45;
-        int numOutputs = 10;
+//        int numInputs = 45;
+//        int numOutputs = 10;
+//        int numHiddenNodes = 1000;
+
+        int numInputs = 561;
+        int numOutputs = 6;
         int numHiddenNodes = 1000;
 
 
-        final String filenameTrain  = "res/dataset/train.csv";
-        final String filenameTest  = "res/dataset/test.csv";
+//        final String filenameTrain = "res/dataset/train.csv";
+//        final String filenameTest = "res/dataset/test.csv";
+        final String filenameTrain = "res/UCI-HAR/train_final.csv";
+        final String filenameTest = "res/UCI-HAR/test_final.csv";
 
         //Load the training data:
         RecordReader rr = new CSVRecordReader();
         rr.initialize(new FileSplit(new File(filenameTrain)));
-        DataSetIterator trainIter = new RecordReaderDataSetIterator(rr,batchSize,0,10);
+        DataSetIterator trainIter = new RecordReaderDataSetIterator(rr, batchSize, 561, 6);
 
         //Load the test/evaluation data:
         RecordReader rrTest = new CSVRecordReader();
         rrTest.initialize(new FileSplit(new File(filenameTest)));
-        DataSetIterator testIter = new RecordReaderDataSetIterator(rrTest,batchSize,0,10);
+        DataSetIterator testIter = new RecordReaderDataSetIterator(rrTest, batchSize, 561, 6);
         System.out.println("data finish");
 
         // https://deeplearning4j.org/docs/latest/deeplearning4j-nn-multilayernetwork
@@ -81,28 +87,18 @@ public class baselinemodel {
         model.setListeners(new ScoreIterationListener(10));  //Print score every 10 parameter updates
         System.out.println("init finish");
 
-        //ui
-//        StatsStorage statsStorage = new FileStatsStorage(new File(System.getProperty("java.io.tmpdir"), "ui-stats.dl4j"));
-//        int listenerFrequency = 1;
-//        model.setListeners(new StatsListener(statsStorage, listenerFrequency));
-//        System.out.println("StatsStorage finish");
-//        UIServer uiServer = UIServer.getInstance();
-//        uiServer.attach(statsStorage);
-//        System.out.println("ui finish");
-
-
-        model.fit( trainIter, nEpochs );
+        model.fit(trainIter, nEpochs);
         System.out.println("fit finish");
 //        MultiLayerNetwork model = ModelSerializer.restoreMultiLayerNetwork("res/model/trained_nn.zip");
 
 
         System.out.println("Evaluate model....");
         Evaluation eval = new Evaluation(numOutputs);
-        while(testIter.hasNext()){
+        while (testIter.hasNext()) {
             DataSet t = testIter.next();
             INDArray features = t.getFeatures();
             INDArray labels = t.getLabels();
-            INDArray predicted = model.output(features,false);
+            INDArray predicted = model.output(features, false);
             System.out.println("label:");
             System.out.println(labels);
 
@@ -115,7 +111,7 @@ public class baselinemodel {
 
         // save model
         boolean saveUpdate = true;
-        File locationToSave = new File("res/model/trained_nn.zip");
+        File locationToSave = new File("res/serverModel/trained_nn.zip");
         ModelSerializer.writeModel(model, locationToSave, saveUpdate);
         System.out.println("save model finish");
     }

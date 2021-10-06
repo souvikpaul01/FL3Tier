@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bytedeco:mkl-dnn-platform:0.18.1-1.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/mkl-dnn-platform/0.18.1-1.5/88dd92f5d8ad5c7d4757517ca793044e58416ae2/mkl-dnn-platform-0.18.1-1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/mkl-dnn-platform/0.18.1-1.5/560b49f85f5ca8552cf8ad16cbde83151a33fea3/mkl-dnn-platform-0.18.1-1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

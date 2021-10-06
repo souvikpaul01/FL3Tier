@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars.npm:d3-timer:1.0.10">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/d3-timer/1.0.10/1870116c7ef39b5339817699c482ae6875b38a07/d3-timer-1.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/d3-timer/1.0.10/b04f3ee8f5e43fa3b162981b50bb72fe1acabb33/d3-timer-1.0.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

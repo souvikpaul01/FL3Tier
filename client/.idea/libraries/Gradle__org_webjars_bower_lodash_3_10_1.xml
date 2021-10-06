@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars.bower:lodash:3.10.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.bower/lodash/3.10.1/8e32fa3aab101abe875b9fb53a1449c261367032/lodash-3.10.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.bower/lodash/3.10.1/b04f3ee8f5e43fa3b162981b50bb72fe1acabb33/lodash-3.10.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

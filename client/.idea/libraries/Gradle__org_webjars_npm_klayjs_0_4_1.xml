@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars.npm:klayjs:0.4.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/klayjs/0.4.1/9af231f85c274b47a945636d1ad157958e1d9a0b/klayjs-0.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars.npm/klayjs/0.4.1/b04f3ee8f5e43fa3b162981b50bb72fe1acabb33/klayjs-0.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

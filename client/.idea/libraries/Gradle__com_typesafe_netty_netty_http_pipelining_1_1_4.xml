@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.typesafe.netty:netty-http-pipelining:1.1.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.netty/netty-http-pipelining/1.1.4/66aa09e227b29a61326c7b025eb7005ef4529b08/netty-http-pipelining-1.1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.netty/netty-http-pipelining/1.1.4/4adf2f2253d78ec48b6d02a1136f3cf6e1cb33b3/netty-http-pipelining-1.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars:flot:0.8.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/flot/0.8.3/65aaeb7b0c03f888c3d5a80ebac2fa78c56cab82/flot-0.8.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/flot/0.8.3/9063247cd56907f0be358a62e4de7c3cdbf45b43/flot-0.8.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

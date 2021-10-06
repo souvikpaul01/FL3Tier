@@ -17,7 +17,7 @@ public class FileClient {
     private DataOutputStream out;
 
     public static String uploadDir = "res/clientModel/";
-    public static String downloadDir = "res/serverModel/";
+    public static String downloadDir = "C:\\Users\\souvik\\Downloads\\dev\\FL3Tier\\server\\res\\serverModel\\";
 
     private FileClient(Socket socket, int id, DataInputStream input, DataOutputStream output) {
         this.socket = socket;
@@ -221,33 +221,42 @@ public class FileClient {
 
 
     public static void main(String args[]) throws IOException, InterruptedException {
-//        String DEFAULT_IP = "30.20.0.8";
-        String DEFAULT_IP = "192.168.0.106";
+        String DEFAULT_IP = "localhost";
+//        String DEFAULT_IP = "192.168.0.106";
         int DEFAULT_PORT = 8000;
         int DEFAULT_TIMEOUT = 5000;
+        int layer = 2;
 
-        // This client is just used for download the model from server
-
-        FileClient c = connect(DEFAULT_IP, DEFAULT_PORT, DEFAULT_TIMEOUT);
-        //download latest model from server
-        c.download("server_model.zip");
-//
-//        //local update
-//        localUpdate localModel = new localUpdate();
-//        localModel.id = c.id + "";
-//        localModel.clientUpdate();
-//
-//        //upload local model to server
-//        c.upload(new File(uploadDir + c.id + ".zip"), c.id + ".zip");
-//
-//        //disconnect
-//        c.quit();
-        MultiClients multiClients = new MultiClients();
-        int numOfClients = 1;
-        for (int i = 0; i < numOfClients; i++) {
-            Thread thread = new Thread(multiClients);
-            thread.start();
+        FileClient c = FileClient.connect(DEFAULT_IP, DEFAULT_PORT, DEFAULT_TIMEOUT);
+        try {
+            c.download("server_model.zip");
+        }catch (IOException e) {
+            System.out.println(e.getMessage());
         }
+
+        //local update
+        localUpdate localModel = new localUpdate();
+        localModel.id = c.id + "";
+        localModel.clientUpdate();
+
+        Map<String, INDArray> map = new HashMap<>();
+        Map<String, INDArray> paramTable = localUpdate.transferred_model.paramTable();
+        map.put("weight", paramTable.get(String.format("%d_W", layer)));
+        map.put("bias", paramTable.get(String.format("%d_b", layer)));
+        try {
+            c.uploadParamTable(map);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        c.quit();
+
+
+//        MultiClients multiClients = new MultiClients();
+//        int numOfClients = 1;
+//        for (int i = 0; i < numOfClients; i++) {
+//            Thread thread = new Thread(multiClients);
+//            thread.start();
+//        }
 
     }
 
