@@ -28,7 +28,7 @@ import java.util.Random;
 public class localUpdate {
 
 
-    String filenameTrain = "home\\pi\\FL3Tier\\client\\res\\trashnet\\";
+    String filenameTrain = "home/pi/FL3Tier/client/res/trashnet/";
     String id = null;
 
     private static Logger log = LoggerFactory.getLogger(localUpdate.class);
@@ -90,7 +90,7 @@ public class localUpdate {
                 //System.out.println(imgFile);
                 INDArray img = nativeImageLoader.asRowVector(imgFile);
                 //INDArray img = nativeImageLoader.asMatrix(imgFile);
-                log.info(img.shapeInfoToString());
+                //log.info(img.shapeInfoToString());
                // System.out.println(img.length());
                 scalar.transform(img);
                 //System.out.println(img);
