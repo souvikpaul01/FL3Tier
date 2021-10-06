@@ -17,7 +17,7 @@ public class FileClient {
     private DataOutputStream out;
 
     public static String uploadDir = "res/clientModel/";
-    public static String downloadDir = "C:\\Users\\souvik\\Downloads\\dev\\FL3Tier\\server\\res\\serverModel\\";
+    public static String downloadDir = "home\\ubuntu\\FL3Tier\\server\\res\\serverModel\\";
 
     private FileClient(Socket socket, int id, DataInputStream input, DataOutputStream output) {
         this.socket = socket;
