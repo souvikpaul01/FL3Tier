@@ -17,7 +17,7 @@ public class FileClient {
     private DataOutputStream out;
 
     public static String uploadDir = "res/clientModel/";
-    public static String downloadDir = "res/serverModel/";
+    public static String downloadDir = "C:\\Users\\souvik\\Downloads\\dev\\FL3Tier\\server\\res\\serverModel\\";
 
     private FileClient(Socket socket, int id, DataInputStream input, DataOutputStream output) {
         this.socket = socket;
@@ -238,7 +238,7 @@ public class FileClient {
         localUpdate localModel = new localUpdate();
         localModel.id = c.id + "";
         localModel.clientUpdate();
-
+        localUpdate.evaluateModel();
         Map<String, INDArray> map = new HashMap<>();
         Map<String, INDArray> paramTable = localUpdate.transferred_model.paramTable();
         map.put("weight", paramTable.get(String.format("%d_W", layer)));
@@ -248,6 +248,7 @@ public class FileClient {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         c.quit();
 
 

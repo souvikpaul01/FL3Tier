@@ -17,7 +17,7 @@ public class FileServer {
     public static Map<Integer, Map<String, INDArray>> cache = new HashMap<>();
     public static FederatedModel federatedmodel = new FederatedModel();
     private static ServerSocket serverSocket;
-    private static int clientNum = 3;
+    private static int clientNum = 1;
 
     private void init(int port, int timeout) {
         try {
@@ -53,7 +53,7 @@ public class FileServer {
         // Run server
         int DEFAULT_PORT = 8000;
         int DEFAULT_TIMEOUT = 60 * 1000;//30 seconds
-        int round = 5;
+        int round = 1;
 
         //to do: select client
         federatedmodel.initModel();
@@ -64,8 +64,9 @@ public class FileServer {
         for (int r = 0; r < round; r++) {
             System.out.println("\n\nround:" + r);
             fileserver.run();
+
             // need to add time to wait for the upload
-            Thread.sleep(80 * 1000);
+            Thread.sleep(60 * 5000 );
             System.out.println("the cache size is " + cache.size());
 
             federatedmodel.AverageWeights(2, 0.5, cache.size());

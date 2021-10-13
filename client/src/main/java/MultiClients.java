@@ -25,7 +25,11 @@ class MultiClients implements Runnable {
         //local update
         localUpdate localModel = new localUpdate();
         localModel.id = c.id + "";
-        localModel.clientUpdate();
+        try {
+            localModel.clientUpdate();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         Map<String, INDArray> map = new HashMap<>();
         Map<String, INDArray> paramTable = localUpdate.transferred_model.paramTable();
